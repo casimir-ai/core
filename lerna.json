@@ -1,0 +1,28 @@
+{
+  "packages": [
+    "packages/**"
+  ],
+  "version": "1.0.0",
+  "npmClient": "npm",
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore: publish %s",
+      "ignoreChanges": [
+        "**/__fixtures__/**",
+        "**/__tests__/**",
+        "**/*.md"
+      ],
+      "includeMergedTags": true,
+      "allowBranch": [
+        "master"
+      ]
+    },
+    "publish": {},
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  }
+}
